@@ -27,13 +27,15 @@ If you want to clone this repository and run the portfolio locally, follow the s
 # 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git```
+git clone https://github.com/yourusername/portfolio.git
+```
 
 
 # 2. Navigate to the project directory:
 
 ```bash
-cd portfolio```
+cd portfolio
+```
 
 
 # 3. Open the index.html file in your browser.
