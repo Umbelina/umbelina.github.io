@@ -8,81 +8,28 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
 
-  <title>Umbelina's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        section {
-            padding: 20px;
-            margin: 0 10%;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .project {
-            flex: 1 1 calc(33% - 20px);
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .contact form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact form input, .contact form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .contact form button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact form button:hover {
-            background-color: #45a049;
-        }
-    </style>
-
+  <title>Umbelina's Portfolio - Key Projects</title>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {    
-        fetch('navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar').innerHTML = data;      
-          });        
-      });
+        // Script para mostrar os itens ao descer a página
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+
+            window.addEventListener('scroll', function() {
+                let elements = document.querySelectorAll('p');
+                let windowHeight = window.innerHeight;
+                
+                elements.forEach(function(element) {
+                    let position = element.getBoundingClientRect().top;
+                    if (position - windowHeight <= 0) {
+                        element.classList.add('show');
+                    }
+                });
+            });
+        });
     </script>
 </head>
 
