@@ -74,19 +74,26 @@
             background-color: #45a049;
         }
     </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        });
+    </script>
 </head>
 
-<body>
-    <header>
-        <h1>Hi, I'm Umbelina</h1>
-        <p>Systems Development Analyst | Computer Engineer</p>
+  <body>  
+    
+    <header>    
+      <h1>Hi, I'm Umbelina</h1>      
+      <p>Systems Development Analyst | Computer Engineer</p>
     </header>
 
-  <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Key Projects</a>
-        <a href="#contact">Contact</a>
-  </nav>
+    <div id="navbar"></div>
 
     <section id="about">
         <h2>About</h2>
