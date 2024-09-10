@@ -69,6 +69,8 @@ h2 {
 p {
     font-size: 1.1em;
     margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     opacity: 0; /* Inicialmente invisível para animação */
     transform: translateY(30px); /* Movido para baixo para animação */
     transition: opacity 0.6s, transform 0.6s;
