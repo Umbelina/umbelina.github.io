@@ -24,21 +24,21 @@ You can view the portfolio directly on GitHub Pages using the link below:
 
 If you want to clone this repository and run the portfolio locally, follow the steps below:
 
-# 1. Clone the repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/portfolio.git
 ```
 
 
-# 2. Navigate to the project directory:
+2. Navigate to the project directory:
 
 ```bash
 cd portfolio
 ```
 
 
-# 3. Open the index.html file in your browser.
+3. Open the index.html file in your browser.
 
 
 # Contributions
