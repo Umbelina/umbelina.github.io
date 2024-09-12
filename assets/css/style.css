@@ -37,10 +37,14 @@ header nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.2em;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  background-color: #3498DB; /* Azul Claro */
+  color: white;
 }
 
 /* Seção principal */
