@@ -1,15 +1,10 @@
----
----
-
-@import "{{ site.theme }}";
-
 /* Estilo global */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; /* Cinza claro */
-  color: #333;
+  background-color: #ECF0F1; /* Cinza Claro */
+  color: #2C3E50; /* Azul Escuro */
 }
 
 /* Contêiner principal */
@@ -21,11 +16,11 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #6a0dad; /* Roxo */
+  background-color: #2C3E50; /* Azul Escuro */
   color: white;
   padding: 20px;
   text-align: center;
-  border-bottom: 5px solid #5a0ea6; /* Roxo mais escuro para o efeito */
+  border-bottom: 4px solid #3498DB; /* Azul Claro para o efeito */
 }
 
 header h1 {
@@ -51,21 +46,21 @@ header nav a:hover {
 /* Seção principal */
 .main {
   padding: 40px 20px;
-  background-color: white;
+  background-color: #FFFFFF; /* Branco */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main h2 {
-  color: #6a0dad; /* Roxo */
-  border-bottom: 2px solid #6a0dad; /* Linha de destaque */
+  color: #2C3E50; /* Azul Escuro */
+  border-bottom: 2px solid #3498DB; /* Azul Claro para a linha de destaque */
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 /* Cards de projetos */
 .project-card {
-  background-color: white;
+  background-color: #FFFFFF; /* Branco */
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -81,25 +76,50 @@ header nav a:hover {
 
 .project-card h3 {
   margin-top: 0;
-  color: #333;
+  color: #2C3E50; /* Azul Escuro */
 }
 
 .project-card p {
-  color: #666;
+  color: #7F8C8D; /* Cinza Escuro */
 }
 
 /* Rodapé */
 footer {
-  background-color: #333;
+  background-color: #2C3E50; /* Azul Escuro */
   color: white;
   padding: 20px;
   text-align: center;
-  border-top: 5px solid #6a0dad; /* Roxo */
+  border-top: 4px solid #3498DB; /* Azul Claro */
 }
 
 footer p {
   margin: 0;
 }
 
-/* Formulários e botões *
+/* Formulários e botões */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3498DB; /* Azul Claro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980B9; /* Azul Escuro */
+}
+
 
